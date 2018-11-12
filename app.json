@@ -1,0 +1,142 @@
+{
+  "name": "Kuro's Heroku NadekoBot",
+  "description": "Additional changes to Kuro's NadekoBot. Please read the README carefully.",
+  "keywords": [
+    "Heroku",
+    "NadekoBot",
+    "Discord",
+    "Discord Bot",
+    "Entertainment",
+    "Kuro"
+  ],
+  "website": "https://nadekobot.me/",
+  "repository": "https://github.com/ScarletKuro/NadekoBot",
+  "logo": "https://nadekobot.me/static/media/nadeko-top.ad6cc06a.png",
+  
+  "addons": [
+    "heroku-redis",
+    "heroku-postgresql",
+    "logdna"
+  ],
+  "env": {
+    "SELFBOT_CLIENTID": {
+      "description": "Discord Client Id. Get it here: https://discordapp.com/developers/applications/",
+	  "required": true
+    },
+    "SELFBOT_TOKEN": {
+      "description": "Discord BOT token. Get it here: https://discordapp.com/developers/applications/",
+	  "required": true
+    },
+    "SELFBOT_OWNEDIDS": {
+      "description": "Owners Id, to assign more than one use comma(,) to separate. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+	  "required": true
+    },
+    "SELFBOT_LOLAPIKEY": {
+      "description": "LoL Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+	  "required": false
+    },
+    "SELFBOT_GOOGLEAPIKEY": {
+      "description": "Google Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+	  "required": false
+    },
+    "SELFBOT_MASHAPEKEY": {
+      "description": "Mashape Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+	  "required": false
+    },
+    "SELFBOT_OSUAPIKEY": {
+      "description": "Osu Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+	  "required": false
+    },
+    "SELFBOT_CLEVERBOTAPIKEY": {
+      "description": "CleaverBot Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+	  "required": false
+    },
+    "SELFBOT_TOTALSHARDS": {
+      "description": "TotalShards. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": "1"
+    },
+    "SELFBOT_PATREONACCESSTOKEN": {
+      "description": "Patreon Access Token. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
+    },
+    "SELFBOT_PATREONCAMPAIGNID": {
+      "description": "Patreon Campaign Id. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": "334038"
+    },
+    "SELFBOT_SHARDRUNCOMMAND": {
+      "description": "Shard Run Command. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
+    },
+    "SELFBOT_SHARDRUNARGUMENTS": {
+      "description": "Shard Run Arguments. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
+    },
+    "SELFBOT_SHARDRUNPORT": {
+      "description": "Shard Run port. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
+    },
+    "SELFBOT_MININGPROXYURL": {
+      "description": "Mining Proxy Url. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
+    },
+    "SELFBOT_MININGPROXYCRED": {
+      "description": "Mining Proxy Credentials. Only touch it, if you know what are you doing.",
+	  "value": "",
+	  "required": false
+    },
+    "SELFBOT_BOTLISTTOKEN": {
+      "description": "Bot List Token. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
+    },
+    "SELFBOT_TWITCHCLIENTID": {
+      "description": "Twitch client Id",
+	  "required": false,
+	  "value": ""
+    },
+    "SELFBOT_VOTETOKEN": {
+      "description": "Vote Token. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
+    },
+    "SELFBOT_VOTEURL": {
+      "description": "Vote Url. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+	{
+		"url": "https://github.com/challengee/heroku-buildpack-libsodium"
+	},
+	{
+		"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+	},
+	{
+		"url": "https://github.com/dubsmash/heroku-buildpack-opus.git"
+	},
+	{
+		"url": "https://github.com/appositum/heroku-buildpack-youtube-dl.git"
+	},
+	{
+		"url": "https://github.com/ScarletKuro/dotnetcore-buildpackv2.1.git"
+	}
+  ]
+}
+
+
+
+
