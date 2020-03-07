@@ -53,9 +53,9 @@
   },
   "greetmsg": {
     "Cmd": "greetmsg",
-    "Desc": "Sets a new join announcement message which will be shown in the server's channel. Type `%user%` if you want to mention the new member. Using it with no message will show the current greet message. You can use embed json from <https://eb.nadeko.bot/> instead of a regular text, if you want the message to be embedded.",
+    "Desc": "Sets a new join announcement message which will be shown in the server's channel. Type `%user.mention%` if you want to mention the new member. Using it with no message will show the current greet message. You can use embed json from <https://eb.nadeko.bot/> instead of a regular text, if you want the message to be embedded.",
     "Usage": [
-      "{0}greetmsg Welcome, %user%."
+      "{0}greetmsg Welcome, %user.mention%."
     ]
   },
   "bye": {
@@ -67,9 +67,9 @@
   },
   "byemsg": {
     "Cmd": "byemsg",
-    "Desc": "Sets a new leave announcement message. Type `%user%` if you want to show the name the user who left. Type `%id%` to show id. Using this command with no message will show the current bye message. You can use embed json from <https://eb.nadeko.bot/> instead of a regular text, if you want the message to be embedded.",
+    "Desc": "Sets a new leave announcement message. Type `%user.mention%` if you want to show the name the user who left. Type `%id%` to show id. Using this command with no message will show the current bye message. You can use embed json from <https://eb.nadeko.bot/> instead of a regular text, if you want the message to be embedded.",
     "Usage": [
-      "{0}byemsg %user% has left."
+      "{0}byemsg %user.mention% has left."
     ]
   },
   "byedel": {
@@ -140,7 +140,7 @@
   },
   "addplaying": {
     "Cmd": "addplaying adpl",
-    "Desc": "Adds a specified string to the list of playing strings to rotate. You have to pick either 'Playing', 'Watching' or 'Listening' as the first parameter. Supported placeholders: `%servers%`, `%users%`, `%playing%`, `%queued%`, `%time%`, `%shardid%`, `%shardcount%`, `%shardguilds%`.",
+    "Desc": "Adds a specified string to the list of playing strings to rotate. You have to pick either 'Playing', 'Watching' or 'Listening' as the first parameter.",
     "Usage": [
       "{0}adpl Playing with you",
       "{0}adpl Watching you sleep"
@@ -253,7 +253,7 @@
     "Cmd": "addcustreact acr",
     "Desc": "Add a custom reaction with a trigger and a response. Running this command in server requires the Administration permission. Running this command in DM is Bot Owner only and adds a new global custom reaction. Guide here: <http://nadekobot.readthedocs.io/en/latest/Custom%20Reactions/>",
     "Usage": [
-      "{0}acr \"hello\" Hi there %user%"
+      "{0}acr \"hello\" Hi there %user.mention%"
     ]
   },
   "listcustreact": {
@@ -609,9 +609,9 @@
   },
   "remindtemplate": {
     "Cmd": "remindtemplate",
-    "Desc": "Sets message for when the remind is triggered.  Available placeholders are `%user%` - user who ran the command, `%message%` - Message specified in the remind, `%target%` - target channel of the remind.",
+    "Desc": "Sets message for when the remind is triggered.",
     "Usage": [
-      "{0}remindtemplate %user%, do %message%!"
+      "{0}remindtemplate %user.mention%, do %message%!"
     ]
   },
   "serverinfo": {
@@ -1849,9 +1849,9 @@
   },
   "greetdmmsg": {
     "Cmd": "greetdmmsg",
-    "Desc": "Sets a new join announcement message which will be sent to the user who joined. Type `%user%` if you want to mention the new member. Using it with no message will show the current DM greet message. You can use embed json from <https://eb.nadeko.bot> instead of a regular text, if you want the message to be embedded.",
+    "Desc": "Sets a new join announcement message which will be sent to the user who joined. Type `%user.mention%` if you want to mention the new member. Using it with no message will show the current DM greet message. You can use embed json from <https://eb.nadeko.bot> instead of a regular text, if you want the message to be embedded.",
     "Usage": [
-      "{0}greetdmmsg Welcome to the server, %user%"
+      "{0}greetdmmsg Welcome to the server, %user.mention%"
     ]
   },
   "cash": {
@@ -3162,7 +3162,7 @@
   },
   "say": {
     "cmd": "say",
-    "desc": "Bot will send the message you typed in the specified channel. If you ommit the channel name, it will send the mesasge in the current channel. Supports embeds.",
+    "desc": "Bot will send the message you typed in the specified channel. If you omit the channel name, it will send the message in the current channel. Supports embeds.",
     "usage": [
       "{0}say hi",
       "{0}say #chat hi"

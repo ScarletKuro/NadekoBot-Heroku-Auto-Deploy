@@ -972,6 +972,6 @@
     "gambling_cards_left": "데크에는 {0} 카드가 남아 있습니다.",
     "xp_template_reloaded": "Xp 템플릿이 다시로드되었습니다.",
     "gambling_new_gamestatus_event": "어떤 채널 에든 비밀 코드를 입력하면 {1}을 받게됩니다.\n{2} 남았습니다.",
-    "gambling_event_duration_footer": "이 이벤트는 최대 30 시간 동안 실행됩니다.",
+    "gambling_event_duration_footer": "이 이벤트는 최대 {0} 시간 동안 실행됩니다.",
     "gambling_event_title": "{0} 이벤트가 시작됐습니다!"
 }
