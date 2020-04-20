@@ -251,7 +251,7 @@
   },
   "addcustreact": {
     "Cmd": "addcustreact acr",
-    "Desc": "Add a custom reaction with a trigger and a response. Running this command in server requires the Administration permission. Running this command in DM is Bot Owner only and adds a new global custom reaction. Guide here: <http://nadekobot.readthedocs.io/en/latest/Custom%20Reactions/>",
+    "Desc": "Add a custom reaction with a trigger and a response. Running this command in server requires the Administration permission. Running this command in DM is Bot Owner only and adds a new global custom reaction. Guide here: <http://nadekobot.readthedocs.io/en/latest/custom-reactions/>",
     "Usage": [
       "{0}acr \"hello\" Hi there %user.mention%"
     ]
