@@ -28,27 +28,27 @@
 	  "required": true
     },
     "SELFBOT_OWNEDIDS": {
-      "description": "Owners Id, to assign more than one use comma(,) to separate. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+      "description": "Owners Id, to assign more than one use comma(,) to separate. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/jsons-explained/",
 	  "required": true
     },
     "SELFBOT_LOLAPIKEY": {
-      "description": "LoL Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+      "description": "LoL Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/jsons-explained/",
 	  "required": false
     },
     "SELFBOT_GOOGLEAPIKEY": {
-      "description": "Google Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+      "description": "Google Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/jsons-explained/",
 	  "required": false
     },
     "SELFBOT_MASHAPEKEY": {
-      "description": "Mashape Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+      "description": "Mashape Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/jsons-explained/",
 	  "required": false
     },
     "SELFBOT_OSUAPIKEY": {
-      "description": "Osu Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+      "description": "Osu Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/jsons-explained/",
 	  "required": false
     },
     "SELFBOT_CLEVERBOTAPIKEY": {
-      "description": "CleaverBot Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+      "description": "CleaverBot Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/jsons-explained/",
 	  "required": false
     },
     "SELFBOT_TOTALSHARDS": {
