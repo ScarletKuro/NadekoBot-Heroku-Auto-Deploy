@@ -1,4 +1,4 @@
-{
+﻿{
   "h": {
     "Cmd": "help h",
     "Desc": "Either shows a help for a single command, or DMs you help link if no parameters are specified.",
@@ -175,6 +175,13 @@
       "{0}vcrole"
     ]
   },
+  "vcrolerm": {
+    "Cmd": "vcrolerm",
+    "Desc": "Removes vcrole associated with the specified voice channel ID. This is useful if your vcrole has been enabled on a VC which has been deleted.",
+    "Usage": [
+      "{0}vcrolerm 123123123123123"
+    ]
+  },
   "scsc": {
     "Cmd": "scsc",
     "Desc": "Starts an instance of cross server channel. You will get a token as a DM that other people will use to tune in to the same instance.",
@@ -329,13 +336,13 @@
     ]
   },
   "delmsgoncmd": {
-    "Cmd": "delmsgoncmd",
+    "Cmd": "delmsgoncmd dmc",
     "Desc": "Toggles the automatic deletion of the user's successful command message to prevent chat flood. You can use it either as a server toggle, channel whitelist, or channel blacklist, as channel option has 3 settings: Enable (always do it on this channel), Disable (never do it on this channel), and Inherit (respect server setting). Use `list` parameter to see the current states.",
     "Usage": [
-      "{0}delmsgoncmd",
-      "{0}delmsgoncmd channel enable",
-      "{0}delmsgoncmd channel inherit",
-      "{0}delmsgoncmd list"
+      "{0}dmc",
+      "{0}dmc channel enable",
+      "{0}dmc ch inherit",
+      "{0}dmc list"
     ]
   },
   "restart": {
@@ -346,31 +353,39 @@
     ]
   },
   "setrole": {
-    "Cmd": "setrole sr",
-    "Desc": "Sets a role for a given user.",
+    "Cmd": "setrole sr giverole",
+    "Desc": "Gives a role to a user. The role you specify has to be lower in the role hierarchy than your highest role.",
     "Usage": [
       "{0}sr @User Guest"
     ]
   },
   "removerole": {
     "Cmd": "removerole rr",
-    "Desc": "Removes a role from a given user.",
+    "Desc": "Removes a role from a user. The role you specify has to be lower in the role hierarchy than your highest role.",
     "Usage": [
       "{0}rr @User Admin"
     ]
   },
   "renamerole": {
     "Cmd": "renamerole renr",
-    "Desc": "Renames a role. The role you are renaming must be lower than bot's highest role.",
+    "Desc": "Renames a role. The role you specify has to be lower in the role hierarchy than your highest role.",
     "Usage": [
       "{0}renr \"First role\" SecondRole"
     ]
   },
   "removeallroles": {
     "Cmd": "removeallroles rar",
-    "Desc": "Removes all roles from a mentioned user.",
+    "Desc": "Removes all roles which are lower than your highest role in the role hierarchy from the user you specify.",
     "Usage": [
       "{0}rar @User"
+    ]
+  },
+  "rolehoist": {
+    "Cmd": "rolehoist rh",
+    "Desc": "Toggles whether this role is displayed in the sidebar or not. The role you specify has to be lower in the role hierarchy than your highest role.",
+    "Usage": [
+      "{0}rh Guests",
+      "{0}rh \"Space Wizards\""
     ]
   },
   "createrole": {
@@ -389,7 +404,7 @@
   },
   "rolecolor": {
     "Cmd": "rolecolor roleclr",
-    "Desc": "Set a role's color using its hex value. Provide no color in order to see the hex value of the color of the specified role.",
+    "Desc": "Set a role's color using its hex value. Provide no color in order to see the hex value of the color of the specified role. The role you specify has to be lower in the role hierarchy than your highest role.",
     "Usage": [
       "{0}roleclr Admin",
       "{0}roleclr Admin ffba55"
@@ -703,21 +718,35 @@
   },
   "chnlfilterinv": {
     "Cmd": "chnlfilterinv cfi",
-    "Desc": "Toggles automatic deletion of invites posted in the channel. Does not negate the `{0}srvrfilterinv` enabled setting. Does not affect the Bot Owner.",
+    "Desc": "Toggles automatic deletion of invites posted in the channel. Does not negate the `{0}srvrfilterinv` enabled setting. Does not affect users with the Administrator permission.",
     "Usage": [
       "{0}cfi"
     ]
   },
   "srvrfilterinv": {
     "Cmd": "srvrfilterinv sfi",
-    "Desc": "Toggles automatic deletion of invites posted in the server. Does not affect the Bot Owner.",
+    "Desc": "Toggles automatic deletion of invites posted in the server. Does not affect users with the Administrator permission.",
     "Usage": [
       "{0}sfi"
     ]
   },
+  "chnlfilterlin": {
+    "Cmd": "chnlfilterlin cfl",
+    "Desc": "Toggles automatic deletion of links posted in the channel. Does not negate the `{0}srvrfilterlin` enabled setting. Does not affect users with the Administrator permission.",
+    "Usage": [
+      "{0}cfl"
+    ]
+  },
+  "srvrfilterlin": {
+    "Cmd": "srvrfilterlin sfl",
+    "Desc": "Toggles automatic deletion of links posted in the server. Does not affect users with the Administrator permission.",
+    "Usage": [
+      "{0}sfl"
+    ]
+  },
   "chnlfilterwords": {
     "Cmd": "chnlfilterwords cfw",
-    "Desc": "Toggles automatic deletion of messages containing filtered words on the channel. Does not negate the `{0}srvrfilterwords` enabled setting. Does not affect the Bot Owner.",
+    "Desc": "Toggles automatic deletion of messages containing filtered words on the channel. Does not negate the `{0}srvrfilterwords` enabled setting. Does not affect users with the Administrator permission.",
     "Usage": [
       "{0}cfw"
     ]
@@ -729,6 +758,13 @@
       "{0}fw poop"
     ]
   },
+  "srvrfilterwords": {
+    "Cmd": "srvrfilterwords sfw",
+    "Desc": "Toggles automatic deletion of messages containing filtered words on the server. Does not affect users with the Administrator permission.",
+    "Usage": [
+      "{0}sfw"
+    ]
+  },
   "lstfilterwords": {
     "Cmd": "lstfilterwords lfw",
     "Desc": "Shows a list of filtered words.",
@@ -736,16 +772,9 @@
       "{0}lfw"
     ]
   },
-  "srvrfilterwords": {
-    "Cmd": "srvrfilterwords sfw",
-    "Desc": "Toggles automatic deletion of messages containing filtered words on the server. Does not affect the Bot Owner.",
-    "Usage": [
-      "{0}sfw"
-    ]
-  },
   "permrole": {
     "Cmd": "permrole pr",
-    "Desc": "Sets a role which can change permissions. Supply no parameters to see the current one. Type 'reset' instead of the role name to reset the currently set permission role. Users with Administrator server permissions can use permission commands regardless of whether they have the specified role. There is no default permission role.",
+    "Desc": "Sets a role which can change permissions. Supply no parameters to see the current one. Type 'reset' instead of the role name to reset the currently set permission role. Users with the Administrator server permissions can use permission commands regardless of whether they have the specified role. There is no default permission role.",
     "Usage": [
       "{0}pr Some Role",
       "{0}pr reset"
@@ -1583,6 +1612,13 @@
     "Desc": "Queries anilist for an anime and shows the first result.",
     "Usage": [
       "{0}ani aquarion evol"
+    ]
+  },
+  "steam": {
+    "Cmd": "steam",
+    "Desc": "Returns a store link for a steam game with the specified name. It doesn't work very well because bundles.",
+    "Usage": [
+      "{0}steam Sakura Agent"
     ]
   },
   "movie": {
@@ -2589,6 +2625,15 @@
       "{0}l7 s"
     ]
   },
+  "crreact": {
+    "Cmd": "crreact crr",
+    "Desc": "Sets or resets reactions (up to 3) which will be added to the response message of the CustomReaction with the specified ID. Provide no emojis to reset.",
+    "Usage": [
+      "{0}crr 59 👍 👎 ",
+      "{0}crr 59 <a:nFlower:408963839191941120>",
+      "{0}crr 59"
+    ]
+  },
   "crad": {
     "Cmd": "crad",
     "Desc": "Toggles whether the message triggering the custom reaction will be automatically deleted.",
@@ -2712,6 +2757,14 @@
       "{0}wait 3000"
     ]
   },
+  "warnexpire": {
+    "Cmd": "warnexpire warne",
+    "Desc": "Sets the number of days after which the warnings will be cleared automatically. This setting works retroactively. If you want to delete the warnings instead of clearing them, you can set the `--delete` optional parameter.",
+    "Usage": [
+      "{0}warne 3",
+      "{0}warne 6 --delete"
+    ]
+  },
   "warnclear": {
     "Cmd": "warnclear warnc",
     "Desc": "Clears all warnings from a certain user. You can specify a number to clear a specific one.",
@@ -2729,11 +2782,12 @@
   },
   "warnpunish": {
     "Cmd": "warnpunish warnp",
-    "Desc": "Sets a punishment for a certain number of warnings. You can specify a time string after 'Ban' or 'Mute' punishment to make it a temporary mute/ban. Provide no punishment to remove.",
+    "Desc": "Sets a punishment for a certain number of warnings. You can specify a time string after 'Ban' or *'Mute' punishments to make it a temporary mute/ban. Provide no punishment to remove. Available punishments: Ban, Kick, Softban, Mute, VoiceMute, ChatMute, AddRole, RemoveRoles",
     "Usage": [
-      "{0}warnp 5 Ban",
       "{0}warnp 3",
-      "{0}warnp 5 Mute 2d12h"
+      "{0}warnp 5 Ban",
+      "{0}warnp 5 Mute 2d12h",
+      "{0}warnp 4 AddRole toxic 1h"
     ]
   },
   "claimpatreonrewards": {
@@ -2784,14 +2838,6 @@
     "Usage": [
       "{0}shop",
       "{0}shop 2"
-    ]
-  },
-  "rolehoist": {
-    "Cmd": "rolehoist rh",
-    "Desc": "Toggles whether this role is displayed in the sidebar or not.",
-    "Usage": [
-      "{0}rh Guests",
-      "{0}rh \"Space Wizards\""
     ]
   },
   "buy": {

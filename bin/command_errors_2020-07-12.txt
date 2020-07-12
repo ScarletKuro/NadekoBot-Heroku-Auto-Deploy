@@ -1,0 +1,63 @@
+[13:03-2020-07-12]
+Npgsql.PostgresException (0x80004005): 22007: invalid input syntax for type interval: "@p1 hours"
+   at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlCommandAsync(DatabaseFacade databaseFacade, RawSqlString sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at NadekoBot.Modules.Administration.Services.UserPunishService.CheckWarnExpiresAsync(UInt64 guildId) in C:\Users\Kuro\NadekoBot\NadekoBot.Core\Modules\Administration\Services\UserPunishService.cs:line 199
+   at NadekoBot.Modules.Administration.Services.UserPunishService.WarnExpireAsync(UInt64 guildId, Int32 days, Boolean delete) in C:\Users\Kuro\NadekoBot\NadekoBot.Core\Modules\Administration\Services\UserPunishService.cs:line 262
+   at NadekoBot.Modules.Administration.Administration.UserPunishCommands.WarnExpire(Int32 days, String[] args) in C:\Users\Kuro\NadekoBot\NadekoBot.Core\Modules\Administration\UserPunishCommands.cs:line 99
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   at Discord.Commands.CommandInfo.ExecuteAsync(ICommandContext context, IEnumerable`1 argList, IEnumerable`1 paramList, IServiceProvider services)
+------
+[13:04-2020-07-12]
+Npgsql.PostgresException (0x80004005): 22007: invalid input syntax for type interval: "@p1 hours"
+   at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlCommandAsync(DatabaseFacade databaseFacade, RawSqlString sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at NadekoBot.Modules.Administration.Services.UserPunishService.CheckWarnExpiresAsync(UInt64 guildId) in C:\Users\Kuro\NadekoBot\NadekoBot.Core\Modules\Administration\Services\UserPunishService.cs:line 199
+   at NadekoBot.Modules.Administration.Services.UserPunishService.WarnExpireAsync(UInt64 guildId, Int32 days, Boolean delete) in C:\Users\Kuro\NadekoBot\NadekoBot.Core\Modules\Administration\Services\UserPunishService.cs:line 262
+   at NadekoBot.Modules.Administration.Administration.UserPunishCommands.WarnExpire(Int32 days, String[] args) in C:\Users\Kuro\NadekoBot\NadekoBot.Core\Modules\Administration\UserPunishCommands.cs:line 99
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   at Discord.Commands.CommandInfo.ExecuteAsync(ICommandContext context, IEnumerable`1 argList, IEnumerable`1 paramList, IServiceProvider services)
+------
+[13:09-2020-07-12]
+Npgsql.PostgresException (0x80004005): 22007: invalid input syntax for type interval: "@p1 hours"
+   at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlCommandAsync(DatabaseFacade databaseFacade, RawSqlString sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at NadekoBot.Modules.Administration.Services.UserPunishService.CheckWarnExpiresAsync(UInt64 guildId) in C:\Users\Kuro\NadekoBot\NadekoBot.Core\Modules\Administration\Services\UserPunishService.cs:line 222
+   at NadekoBot.Modules.Administration.Services.UserPunishService.WarnExpireAsync(UInt64 guildId, Int32 days, Boolean delete) in C:\Users\Kuro\NadekoBot\NadekoBot.Core\Modules\Administration\Services\UserPunishService.cs:line 285
+   at NadekoBot.Modules.Administration.Administration.UserPunishCommands.WarnExpire(Int32 days, String[] args) in C:\Users\Kuro\NadekoBot\NadekoBot.Core\Modules\Administration\UserPunishCommands.cs:line 99
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   at Discord.Commands.CommandInfo.ExecuteAsync(ICommandContext context, IEnumerable`1 argList, IEnumerable`1 paramList, IServiceProvider services)
+------
