@@ -764,7 +764,7 @@
   "gambling_shop": "Shop",
   "gambling_shop_item_add": "Shop item added",
   "gambling_shop_none": "No shop items found on this page.",
-  "gambling_shop_role": "{1} role",
+  "gambling_shop_role": "{2} role",
   "gambling_type": "Type",
   "utility_clpa_next_update": "Next update in {0}",
   "administration_gvc_disabled": "Game Voice Channel feature has been disabled on this server.",
