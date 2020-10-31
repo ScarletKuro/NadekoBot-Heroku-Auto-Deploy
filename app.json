@@ -27,7 +27,7 @@
       "description": "Discord BOT token. Get it here: https://discordapp.com/developers/applications/",
 	  "required": true
     },
-    "SELFBOT_OWNEDIDS": {
+    "SELFBOT_OWNERIDS": {
       "description": "Owners Id, to assign more than one use comma(,) to separate. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/jsons-explained/",
 	  "required": true
     },
