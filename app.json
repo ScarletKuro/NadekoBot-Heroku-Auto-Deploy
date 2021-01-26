@@ -134,7 +134,9 @@
 	{
 		"url": "https://github.com/ScarletKuro/dotnetcore-buildpackv2.1.git"
 	}
-  ]
+  ],
+	
+  "stack": "heroku-18"
 }
 
 
