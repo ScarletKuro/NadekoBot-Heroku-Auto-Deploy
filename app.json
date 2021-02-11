@@ -133,6 +133,9 @@
 	},
 	{
 		"url": "https://github.com/ScarletKuro/dotnetcore-buildpackv2.1.git"
+	},
+	{
+		"url": "https://github.com/soutys/heroku-buildpack-openssl.git"
 	}
   ]
 }
